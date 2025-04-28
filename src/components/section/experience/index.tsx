@@ -40,29 +40,33 @@ const Experience = () => {
                     className="w-full bg-slate-800"
                     style={{ scrollbarWidth: "none" }}
                 >
-                    <ul className="list rounded-box shadow-md bg-slate-800">
+                    <ul className="list-none rounded-lg shadow-md bg-slate-800 w-full">
                         {experiences.map((experience, index) => (
-                            <li key={index} className="list-row">
-                                <div><BsBuildingsFill className='size-10 text-gray-400' /></div>
-                                <div>
-                                    <div> {experience.position}</div>
-                                    <div className="text-xs uppercase font-semibold opacity-60">{experience.company}</div>
+                            <li
+                                key={index}
+                                className="p-4 flex flex-col gap-3 border-b border-slate-700 last:border-none"
+                            >
+                                <div className="flex items-center gap-4">
+                                    <BsBuildingsFill className="text-4xl text-gray-400 flex-shrink-0" />
+                                    <div>
+                                        <h3 className="text-lg font-semibold text-white">{experience.position}</h3>
+                                        <p className="text-xs uppercase font-semibold text-gray-400">{experience.company}</p>
+                                    </div>
                                 </div>
-                                <p className="list-col-wrap text-gray-300 text-xs">
+
+                                <p className="text-sm text-gray-300">
                                     {experience.discription}
                                 </p>
-                                <div className='text-end'>
-                                    <p className="text-gray-500 text-xs whitespace-nowrap">{experience.date}</p>
-                                    <p className='text-gray-300 text-xs'>{experience.location}</p>
-                                </div>
 
+                                <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mt-2">
+                                    <p className="text-xs text-gray-400">{experience.date}</p>
+                                    <p className="text-xs text-gray-300">{experience.location}</p>
+                                </div>
                             </li>
                         ))}
-
-
-
-
                     </ul>
+
+
 
                 </div>
             </div>

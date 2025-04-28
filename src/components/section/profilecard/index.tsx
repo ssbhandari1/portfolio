@@ -49,14 +49,14 @@ const ProfileCard = () => {
           </p>
           <div className=" mt-4 flex space-x-2">
             <Link
-              className="bg-secondary text-white px-4 py-2 rounded-lg flex items-center space-x-2"
-              href={"/contact"}
+              className="bg-secondary text-white px-4 py-2 rounded-lg flex items-center space-x-2 whitespace-nowrap"
+              href={"#contact"}
             >
               <FiPhoneCall />
               <span>Let&apos;s connect</span>
             </Link>
             <button
-              className="bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2"
+              className="bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 cursor-pointer whitespace-nowrap"
               data-clipboard-text="example@example.com"
               onClick={handleOpenPDF}
             >

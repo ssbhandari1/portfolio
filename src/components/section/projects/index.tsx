@@ -32,7 +32,7 @@ const Projects = () => {
             <Link
               href={project?.link}
               target="_blank"
-              className="absolute top-0 z-50  right-0 p-2 rounded transition-opacity duration-200 bg-slate-800 text-white group-hover:bg-secondary"
+              className="absolute top-0 z-30  right-0 p-2 rounded transition-opacity duration-200 bg-slate-800 text-white group-hover:bg-secondary"
             >
               <FiArrowUpRight className="text-4xl" />
             </Link>
