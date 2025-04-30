@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import { MdSpaceDashboard } from "react-icons/md";
+import React from "react";
 import { RiHome6Line } from "react-icons/ri";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { VscGithubProject } from "react-icons/vsc";
 import { BsChatSquareText } from "react-icons/bs";
-import { useRouter } from "next/navigation";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Link from "next/link";
 import Image from "next/image";
 
 

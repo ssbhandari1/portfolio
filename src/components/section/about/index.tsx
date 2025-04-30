@@ -18,7 +18,7 @@ const About = () => {
             <p className="text-sm text-gray-300 leading-relaxed max-w-3xl">
                 As a quick learner and a collaborative partner, I work closely with clients and teams to deliver clean, maintainable code and seamless user experiences. I am passionate about solving real-world problems through technology and continuously refining my skills to stay ahead in this fast-evolving industry.
 
-                I am excited to contribute my knowledge and creativity to meaningful projects — let's collaborate and bring your vision to life.
+                I am excited to contribute my knowledge and creativity to meaningful projects — lets collaborate and bring your vision to life.
             </p>
 
             <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-6 py-8 text-white text-sm">
@@ -35,7 +35,6 @@ const About = () => {
                 ))}
             </div>
 
-            {/* Stats Section */}
             <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 text-center border-t border-gray-700 pt-8">
                 <div className="flex flex-col items-center">
                     <div className="text-5xl font-bold text-secondary">5</div>

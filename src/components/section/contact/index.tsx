@@ -5,7 +5,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false)
   const handleSubmit = async (formData: FormData) => {
     setLoading(true)
-    const result: any = await sendEmail(formData);
+    const result = await sendEmail(formData);
     console.log("handleSubmit", result)
     if (result.success) {
       setLoading(false)
@@ -30,7 +30,7 @@ const Contact = () => {
         👋
         Work
         Together</h1>
-      <p className='text-sm leading-[1.3`]'>Let's Build Something Amazing Together! feel free to reach out if you are looking for a passionate developer to bring your ideas to life.I'm always excited to colliborate on meaningful Project.</p>
+      <p className='text-sm leading-[1.3`]'>Lets Build Something Amazing Together! feel free to reach out if you are looking for a passionate developer to bring your ideas to life.I am always excited to colliborate on meaningful Project.</p>
 
 
       <div className="w-full bg-slate-800 rounded">
