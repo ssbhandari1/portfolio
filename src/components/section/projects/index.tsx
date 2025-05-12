@@ -3,13 +3,21 @@ import React from 'react'
 import { FiArrowUpRight } from 'react-icons/fi';
 
 const Projects = () => {
+  // src={'/profile.jpg'}
   const projects = [
     {
       id: "1",
       name: "Theater",
-      // img: theater,
+      img: "/theater.png",
       link: "https://mycinemas.netlify.app",
       discription:'Theater is a modern web application built with Next.js, React, TypeScript, and Tailwind CSS to display comprehensive movie information. It uses the TMDB API to fetch real-time data about popular, top-rated, upcoming, and now-playing movies. Users can explore movie details such as cast, synopsis, ratings, and genres, along with a dedicated section for the latest releases. The app features user-friendly interface.'
+    },
+    {
+      id: "2",
+      name: "Task Management",
+      img: '/tasky.png',
+      link: "https://task-managements-three.vercel.app",
+      discription:'Built a full-stack Task Management System using Next.js 15 and MongoDB with features like user authentication, task assignment, and real-time dashboards. Implemented secure APIs, dynamic filtering, and responsive UI.'
     },
 
   ];
@@ -38,7 +46,7 @@ const Projects = () => {
             </Link>
 
             <img
-              src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/1015f/MainBefore.jpg"
+              src={project?.img}
               alt="Card Image"
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />

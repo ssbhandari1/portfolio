@@ -13,12 +13,19 @@ const Info = () => {
       <div className='flex gap-3'>
         <Link
           className="bg-secondary text-white px-4 py-2 rounded-lg flex items-center space-x-2"
-          href={"/contact"}
+          href={"#contact"}
         >
 
           <span>Hire Me!</span>
         </Link>
-        <button className='ml-3 text-xl underline'> view my Work</button>
+        <Link
+
+          href={"#projects"}
+        >
+
+          <button className='ml-3 text-xl underline cursor-pointer'> view my Work</button>
+        </Link>
+
       </div>
     </div>
   )
