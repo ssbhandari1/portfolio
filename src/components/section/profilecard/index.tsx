@@ -1,7 +1,8 @@
 'use client'
+import { getExperience } from '@/utils/helper';
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
@@ -9,9 +10,10 @@ import { FiPhoneCall } from "react-icons/fi";
 import { MdContentCopy } from "react-icons/md";
 
 const ProfileCard = () => {
+  const experience = getExperience('2023-10-01');
 
   const handleOpenPDF = () => {
-    const filePath = "/santosh_Resume.pdf";
+    const filePath = "/santoshSingh.pdf";
     window.open(filePath, "_blank");
   };
   const generateWhatsAppLink = () => {
@@ -45,7 +47,7 @@ const ProfileCard = () => {
           <p>
             A Passionate <span className="font-bold">MERN Stack Developer</span>{" "}
             🖥️ &amp; having
-            <span className="font-bold"> 1.5+ years</span> of Experience.
+            <span className="font-bold"> {experience} years</span> of Experience.
           </p>
           <div className=" mt-4 flex space-x-2">
             <Link

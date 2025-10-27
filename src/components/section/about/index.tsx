@@ -1,6 +1,9 @@
+'use client'
+import { getExperience } from '@/utils/helper';
 import React from 'react'
 
 const About = () => {
+    const experience = getExperience('2023-10-01');
     return (
         <div className="flex flex-col gap-6 items-start mt-20 px-4">
             <button className="px-4 py-2 border border-gray-400 rounded-md text-sm font-medium hover:bg-secondary hover:text-white transition">
@@ -51,7 +54,7 @@ const About = () => {
                 </div> */}
 
                 <div className="flex flex-col items-center">
-                    <div className="text-5xl font-bold text-secondary">1.5+</div>
+                    <div className="text-5xl font-bold text-secondary">{experience}</div>
                     <p className="text-sm text-gray-300 mt-2">
                         Years <br /> Experience
                     </p>
