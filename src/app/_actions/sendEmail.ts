@@ -1,7 +1,6 @@
-"use server"; // important for server actions
+"use server";
 
 import nodemailer from "nodemailer";
-
 export async function sendEmail(formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;

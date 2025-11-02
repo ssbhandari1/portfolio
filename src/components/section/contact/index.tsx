@@ -18,7 +18,7 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col gap-5 items-start mt-40'>
-      <button className='px-3 py-2 border border-gray-400 rounded'> Contact</button>
+      <button className='px-3 py-2 border border-gray-400 rounded text-white hover:text-secondary transition'> Contact</button>
       <div className="text-start mb-8">
         <h4 className="text-4xl text-white font-bold">Get in</h4>
         <div className="flex items-center justify-center gap-4 mt-2">

@@ -5,8 +5,8 @@ import React from 'react'
 const About = () => {
     const experience = getExperience('2023-10-01');
     return (
-        <div className="flex flex-col gap-6 items-start mt-20 px-4">
-            <button className="px-4 py-2 border border-gray-400 rounded-md text-sm font-medium hover:bg-secondary hover:text-white transition">
+        <div className="flex flex-col gap-6 items-start mt-20 px-4 bg-slate-800 p-3">
+            <button className="px-4 py-2 border border-gray-400 rounded-md text-sm font-medium text-white hover:text-secondary transition">
                 About Me
             </button>
 
@@ -28,7 +28,7 @@ const About = () => {
                 {[
                     { label: "Phone", value: "9650157684" },
                     { label: "Email", value: "santoshbhandarig@gmail.com" },
-                    { label: "Freelance", value: "Available" },
+                    { label: "Available", value: "Freelance, Full-time, Remote"},
                     { label: "Languages", value: "Hindi, English" },
                 ].map((item, idx) => (
                     <div key={idx} className="flex items-center gap-2">
@@ -45,13 +45,6 @@ const About = () => {
                         Completed <br /> Projects
                     </p>
                 </div>
-
-                {/* <div className="flex flex-col items-center">
-                    <div className="text-5xl font-bold text-secondary">5</div>
-                    <p className="text-sm text-gray-300 mt-2">
-                        Completed <br /> Projects
-                    </p>
-                </div> */}
 
                 <div className="flex flex-col items-center">
                     <div className="text-5xl font-bold text-secondary">{experience}</div>

@@ -8,7 +8,7 @@ import Projects from '../projects'
 
 const MainContent = () => {
   return (
-    <div className="p-6 lg:mr-30 my-4 bg-slate-700 flex flex-col gap-10">
+    <div className="p-6 lg:mr-30 my-4 flex flex-col gap-10">
       <section id="home">
         <Info />
       </section>

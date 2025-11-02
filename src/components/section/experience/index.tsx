@@ -4,11 +4,30 @@ import { BsBuildingsFill } from "react-icons/bs";
 const Experience = () => {
     const experiences = [
         {
-            date: "2023/10 - present",
+            date: "2025/03 - present",
+            company: "CharmAI Technologies Pvt. Ltd",
+            position: "MERN Stack Developer",
+            location: 'Delhi, india',
+            discription: `Built form-driven web applications using React.js with dynamic UI
+rendering from backend metadata/configurations, enabling flexible and scalable form generation. Developed
+a Node.js + Express backend (BFF layer) to manage API integrations and encapsulate business logic,
+following clean architecture principles for maintainability. Implemented unit tests (Jest) and end-to-end
+(E2E) tests (Puppeteer & Playwright), ensuring high test coverage and robust application quality.
+Monitored and resolved high-priority production issues by analyzing logs in Splunk, improving mean time
+to recovery (MTTR). Followed CI/CD workflows using GitHub, Snyk, and SonarQube, automating
+quality checks and deploying seamlessly across pre-prod and production environments`
+        },
+        {
+            date: "2023/10 - 2025/02",
             company: "Misemind Pvt Ltd",
             position: "MERN Stack Developer",
             location: 'Delhi, india',
-            discription: `Built two form-driven web applications -Trading Partner Search and Supplier Onboarding - using React.js with dynamic UI rendered from backend metadata/configs. Developed Node.js + Express backend (BFF layer) to manage API integrations and encapsulate business logic following clean architecture principles. Wrote unit tests using Jest and end-to-end (E2E) test cases with Puppeteer and Playwright to ensure robust application quality. Actively handled high-priority production issues using Splunk for log analysis and debugging.Followed CI/CD workflows with GitHub, Snyk, and SonarQube, deploying across pre-prod and prod environments`
+            discription: `Developed a centralized user access management
+application to control authentication and authorization across multiple enterprise applications and
+domains. Implemented role-based access control (RBAC) and resource-level permissions, ensuring that
+users could only access applications and resources aligned with their roles. Designed dynamic UI
+workflows in React.js to configure application-level and resource-level permissions, improving
+administrator efficiency`
         },
         {
             date: "2023/03 - 2023/07",
@@ -27,12 +46,12 @@ const Experience = () => {
     ];
     return (
         <div className='flex flex-col gap-5 items-start mt-20'>
-            <button className='px-3 py-2 border border-gray-400 rounded'> Experience</button>
+            <button className='px-3 py-2 border border-gray-400 rounded text-white hover:text-secondary transition'> Experience</button>
             <div className="text-start mb-8">
                 <h4 className="text-4xl text-white font-bold">MY</h4>
                 <div className="flex items-center justify-center gap-4 mt-2">
                     <span className="w-12 h-1 bg-secondary"></span>
-                    <p className="text-4xl text-secondary font-semibold underline">Experience</p>
+                    <p className="text-4xl text-secondary font-semibold">Experience</p>
                 </div>
             </div>
             <div className="w-full flex-1">
@@ -59,7 +78,7 @@ const Experience = () => {
                                 </p>
 
                                 <div className="flex flex-col md:flex-row md:justify-between items-start md:items-center mt-2">
-                                    <p className="text-xs text-gray-400">{experience.date}</p>
+                                    <p className={`text-xs ${experience.date.includes('present') ? 'text-green-400' :'text-red-300' }`}>{experience.date}</p>
                                     <p className="text-xs text-gray-300">{experience.location}</p>
                                 </div>
                             </li>

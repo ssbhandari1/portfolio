@@ -3,7 +3,6 @@ import React from 'react'
 import { FiArrowUpRight } from 'react-icons/fi';
 
 const Projects = () => {
-  // src={'/profile.jpg'}
   const projects = [
     {
       id: "1",
@@ -22,16 +21,16 @@ const Projects = () => {
 
   ];
   return (
-    <div className='flex flex-col gap-5 items-start mt-20'>
-      <button className='px-3 py-2 border border-gray-400 rounded'> Projects</button>
+    <div className='flex flex-col gap-5 items-start mt-20 '>
+      <button className='px-3 py-2 border border-gray-400 rounded text-white hover:text-secondary transition'> Projects</button>
       <div className="text-start mb-8">
         <h4 className="text-4xl text-white font-bold">My Recent</h4>
         <div className="flex items-center justify-center gap-4 mt-2">
           <span className="w-12 h-1 bg-secondary"></span>
-          <p className="text-4xl text-secondary font-semibold underline">Projects</p>
+          <p className="text-4xl text-secondary font-semibold">Projects</p>
         </div>
       </div>
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 bg-slate-800 p-3">
         {projects.map((project) => (
           <div
             key={project.id}
