@@ -18,6 +18,13 @@ const Projects = () => {
       link: "https://task-managements-three.vercel.app",
       discription:'Built a full-stack Task Management System using Next.js 15 and MongoDB with features like user authentication, task assignment, and real-time dashboards. Implemented secure APIs, dynamic filtering, and responsive UI.'
     },
+    {
+      id: "3",
+      name: "Easy To Cart",
+      img: '/easytocart.png',
+      link: "https://easy-to-cart.vercel.app/",
+      discription:'Built a full-stack e-commerce application using Next.js for both frontend and backend, featuring user authentication, cart management, checkout flow, order tracking, and Razorpay payment integration.'
+    },
 
   ];
   return (
